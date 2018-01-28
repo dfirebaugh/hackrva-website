@@ -14,6 +14,9 @@ class MainSlider extends Component {
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <div className='joinBtn container text-center pagination-centered'>
+        <button className='text-center pagination-centered' ><h2>Become a Member</h2></button>
+        </div>
       </ol>
       <div className="carousel-inner" role="listbox">
 
