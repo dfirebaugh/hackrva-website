@@ -1,3 +1,5 @@
+
+
 .App {
   background-color: #222;
   text-align: center;
@@ -19,16 +21,7 @@
 }
 .pull-right{padding-right:15px;padding-left:0;border-right:5px solid #eee;border-left:0;text-align:right}
 
-@media screen and (min-width: 990px) {
-    .topNavRight{
-      margin-left:55%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .topNavRight{
-      margin-left:67%;
-    }
-}
+
 
 
 .navBarBlack{
@@ -112,13 +105,11 @@ img {
 }
 
 
-
 .joinBtn{
   z-index:-10;
   background-color:transparent;
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-    /*margin: auto;*/
+    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
 
     /*border: 3px solid green;*/
     padding: 10px;
@@ -126,11 +117,11 @@ img {
 
 .joinBtn button{
   z-index:20;
-  margin-top:460px;
+  /*margin-top:460px;*/
   /*margin-left:5em;*/
   background-color:transparent;
 
-  width: 18em;
+  width: 19em;
   height: 4em;
 }
 
@@ -140,4 +131,20 @@ img {
     font-weight: bold;
     font-size: 25px;
     font-family: 'Orbitron', sans-serif;
+}
+
+
+
+@media screen and (min-width: 990px) {
+    .topNavRight{
+      margin-left:55%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .topNavRight{
+      margin-left:67%;
+    }
+    .joinBtn{
+      margin-left:-1em;
+    }
 }
