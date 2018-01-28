@@ -10,11 +10,11 @@ class MainSlider extends Component {
     return (
 
       <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-      <ol className="carousel-indicators ">
-      
-        <div className='joinBtn container align-middle text-center pagination-centered'>
+      <ol className="sliderOverlay">
+        <div className='joinBtn container'>
         <button className='text-center pagination-centered' ><h2>Become a Member</h2></button>
         </div>
+
       </ol>
       <div className="carousel-inner" role="listbox">
 
