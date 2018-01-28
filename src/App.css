@@ -145,7 +145,16 @@ img {
       margin-left:67%;
     }
     .joinBtn{
-      margin-left:-1em;
+      margin-left:3.5em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .topNavRight{
+      margin-left:72%;
+    }
+    .joinBtn{
+      margin-left:5em;
     }
 }
 
