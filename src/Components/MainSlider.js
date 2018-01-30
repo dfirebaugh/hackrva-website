@@ -34,6 +34,16 @@ class MainSlider extends Component {
         </div>
         </div>
 
+        <div className="carousel-item" style={{backgroundImage: `url(${img1})`}} >
+        <div className="carousel-caption d-none d-md-block">
+        </div>
+        </div>
+
+
+        <div className="carousel-item" style={{backgroundImage: `url(${img3})`}}>
+        <div className="carousel-caption d-none d-md-block">
+        </div>
+        </div>
 
 
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -62,16 +72,3 @@ export default MainSlider;
 //
 // <button>Join Us</button>
 //   </div>
-
-
-
-// <div className="carousel-item" style={{backgroundImage: `url(${img1})`}} >
-// <div className="carousel-caption d-none d-md-block">
-// </div>
-// </div>
-
-
-// <div className="carousel-item" style={{backgroundImage: `url(${img3})`}}>
-// <div className="carousel-caption d-none d-md-block">
-// </div>
-// </div>

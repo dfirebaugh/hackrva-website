@@ -109,10 +109,10 @@ img {
   z-index:-10;
   background-color:transparent;
     min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 50vh; /* These two lines are counted as one :-)       */
+    min-height: 52vh; /* These two lines are counted as one :-)       */
 
     /*border: 3px solid green;*/
-    padding: 10px;
+    padding: 8px;
 }
 
 .joinBtn button{
@@ -173,7 +173,7 @@ position: absolute;
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 20%;
+    margin-left: 16%;
     list-style: none;
   }
