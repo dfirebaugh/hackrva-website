@@ -32,9 +32,13 @@ body{
   /* background-color:white; */
 }
 
+.topMenu{
+  background-color:#222;
+}
+
 .page-container{
   width: 66vw;
-  margin-top: 6vh;
+  margin-top: 12vh;
   background-color:rgb(95, 95, 95);
   color:rgb(212, 212, 212);
 }
@@ -70,6 +74,18 @@ body{
 .scaledImg {
   width:100%;
   height: auto;
+  padding:15px;
+}
+.scaledImg60 {
+  width:60%;
+  height: auto;
+  padding:15px;
+}
+.centerThing{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:15px;
 }
 
 .no-padding{
@@ -134,7 +150,7 @@ body{
   background-color:transparent;
     min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 52vh; /* These two lines are counted as one :-)       */
-
+    
     /*border: 3px solid green;*/
     padding: 8px;
 }
@@ -143,8 +159,8 @@ body{
   z-index:20;
   /*margin-top:460px;*/
   /*margin-left:5em;*/
-  background-color:transparent;
-
+  /* background-color:transparent; */
+  background-color: slategrey;
   width: 19em;
   height: 4em;
 }
@@ -221,30 +237,8 @@ body{
     }*/
 }
 
-<<<<<<< HEAD
 /* @mixin center-children {
   display: flex;
   justify-content: center;
   align-items: center;
 } */
-=======
-.sliderOverlay{
-position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-    z-index: 15;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 20%;
-    margin-left: 16%;
-    list-style: none;
-  }
->>>>>>> e8f75a2148f00a060e0fb8fce0064639aab5e299

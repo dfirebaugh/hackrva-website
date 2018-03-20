@@ -71,13 +71,3 @@ class MainSlider extends Component {
 
 
 export default MainSlider;
-<<<<<<< HEAD
-=======
-
-
-// <div className='no-padding carousel-item' style={sliderStyle} draggable='false'>
-// <h1> Have fun, make stuff!</h1>
-//
-// <button>Join Us</button>
-//   </div>
->>>>>>> e8f75a2148f00a060e0fb8fce0064639aab5e299
