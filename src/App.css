@@ -136,7 +136,7 @@ body{
     min-height: 52vh; /* These two lines are counted as one :-)       */
 
     /*border: 3px solid green;*/
-    padding: 10px;
+    padding: 8px;
 }
 
 .joinBtn button{
@@ -221,8 +221,30 @@ body{
     }*/
 }
 
+<<<<<<< HEAD
 /* @mixin center-children {
   display: flex;
   justify-content: center;
   align-items: center;
 } */
+=======
+.sliderOverlay{
+position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 20%;
+    margin-left: 16%;
+    list-style: none;
+  }
+>>>>>>> e8f75a2148f00a060e0fb8fce0064639aab5e299
