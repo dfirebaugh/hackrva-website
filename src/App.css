@@ -1,5 +1,7 @@
 
-
+body{
+  background-color:black;
+}
 .App {
   background-color: #222;
   text-align: center;
@@ -21,14 +23,36 @@
 }
 .pull-right{padding-right:15px;padding-left:0;border-right:5px solid #eee;border-left:0;text-align:right}
 
+.menu{
+  padding-left:15px;
+  color:white;
+}
+.menu:hover{
+  color:green;
+  /* background-color:white; */
+}
 
+.page-container{
+  width: 66vw;
+  margin-top: 6vh;
+  background-color:rgb(95, 95, 95);
+  color:rgb(212, 212, 212);
+}
 
+.page-container img{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
 
 .navBarBlack{
   background-color: #222;
   color:white;
 }
 
+.app-footer{
+  background-color:black;
+}
 
 .App-title {
   font-size: 1.5em;
@@ -43,8 +67,9 @@
   to { transform: rotate(360deg); }
 }
 
-img {
+.scaledImg {
   width:100%;
+  height: auto;
 }
 
 .no-padding{
@@ -82,7 +107,6 @@ img {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-
 }
 
 .carousel-item h1{
@@ -109,7 +133,7 @@ img {
   z-index:-10;
   background-color:transparent;
     min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 50vh; /* These two lines are counted as one :-)       */
+    min-height: 52vh; /* These two lines are counted as one :-)       */
 
     /*border: 3px solid green;*/
     padding: 10px;
@@ -133,47 +157,72 @@ img {
     font-family: 'Orbitron', sans-serif;
 }
 
+.sliderControlBtns{
+  z-index:20;
+}
+
+.sliderOverlay{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  /*margin-right: 25%;
+  margin-left: 20%;*/
+  list-style: none;
+}
+@media screen and (min-width: 150px) {
+    /*.sliderOverlay{
+      margin-left: 25%;
+    }*/
+}
+@media screen and (min-width: 500px) {
+    /*.sliderOverlay{
+      margin-left: 30%;
+    }*/
+}
 
 
 @media screen and (min-width: 990px) {
     .topNavRight{
       margin-left:55%;
     }
+    /*.sliderOverlay{
+      margin-left: 24.5%;
+    }*/
 }
 @media screen and (min-width: 1200px) {
     .topNavRight{
       margin-left:67%;
     }
-    .joinBtn{
+    /*.joinBtn{
       margin-left:3.5em;
-    }
+    }*/
+    /*.sliderOverlay{
+      margin-left: 22%;
+    }*/
 }
 
 @media screen and (min-width: 1600px) {
     .topNavRight{
       margin-left:72%;
     }
-    .joinBtn{
+    /*.joinBtn{
       margin-left:5em;
-    }
+    }*/
 }
 
-.sliderOverlay{
-position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-    z-index: 15;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-  }
+/* @mixin center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

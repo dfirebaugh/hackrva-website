@@ -1,7 +1,35 @@
 import React, { Component } from 'react';;
 
+// placeholder items until I start passing items from the router
+let items = <ul className="navbar-nav topNavRight mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#Home">Home
+                  <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#About">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#Make">Make</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#Calendar">Calendar</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#Blog">Blog</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#Wiki   ">Wiki</a>
+              </li>
+            </ul>
+
+
+
 class TopNav extends Component {
   render(){
+    // this.props.items.map(item=> console.log(item))
+    // console.log(this.props.items)
     return (
         <div className='topNav'>
 
@@ -12,28 +40,9 @@ class TopNav extends Component {
     <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse  navbar-collapse" id="navbarResponsive">
-      <ul className="navbar-nav topNavRight mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link" href="#Home">Home
-            <span className="sr-only">(current)</span>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#About">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#Make">Make</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#Calendar">Calendar</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#Blog">Blog</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#Wiki   ">Wiki</a>
-        </li>
-      </ul>
+    
+    {/* take in Link items from router */}
+      { this.props.items ? this.props.items.map(i=>i) : items }
     </div>
 
 </nav>
@@ -44,39 +53,3 @@ class TopNav extends Component {
 
 
 export default TopNav;
-
-
-
-
-// <nav className="navbar navBarBlack navbar-expand-lg navbar-dark bg-dark fixed-top">
-//   <div className="container">
-//     <a className="navbar-brand topNavLeft" href="#Hack.RVA">Hack.RVA</a>
-//     <button className="navbar-toggler topNavRight" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-//     <span className="navbar-toggler-icon"></span>
-//     </button>
-//     <div className="collapse navbar-collapse" id="navbarResponsive">
-//       <ul className="navbar-nav mr-auto">
-//         <li className="nav-item active">
-//           <a className="nav-link" href="#Home">Home
-//             <span className="sr-only">(current)</span>
-//           </a>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link" href="#About">About</a>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link" href="#Make">Make</a>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link" href="#Calendar">Calendar</a>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link" href="#Blog">Blog</a>
-//         </li>
-//         <li className="nav-item">
-//           <a className="nav-link" href="#Wiki   ">Wiki</a>
-//         </li>
-//       </ul>
-//     </div>
-//   </div>
-// </nav>
