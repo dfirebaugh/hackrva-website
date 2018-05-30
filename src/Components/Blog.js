@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 // import { Link } from 'react-router-dom';
-
 
 class Blog extends Component {
   componentDidMount(){
@@ -12,17 +12,19 @@ class Blog extends Component {
     this.state && console.log(this.state.blogPosts);
 
     
-    const cards = this.state && this.state.blogPosts.map( x => (
-      <div className="blog-post-card">
+    const cards = this.state && this.state.blogPosts.map( (x, i) => (
+      <div key={i} className="blog-post-card">
         <div className="post-title"> 
           {/* <Link > */}
-          { x.title.rendered} 
+          {ReactHtmlParser(x.title.rendered)}
+          
           {/* </Link> */}
         </div> 
         <div className="date"> {x.date} </div>
-        {/* <div 
+        {/*<div 
           className="excerpt" 
-          dangerouslySetInnerHTML={{__html: x.excerpt.rendered }}> </div> */}
+          dangerouslySetInnerHTML={{__html: x.excerpt.rendered }}> </div>*/}
+          {ReactHtmlParser(x.content.rendered)}
       </div>
   ))
 
@@ -34,7 +36,7 @@ class Blog extends Component {
 
         <style jsx>{`
               .blog-container{
-                background: grey;
+                background: darkgrey;
                 color:white;
                 top:5em;
                 margin-bottom: 5em;
