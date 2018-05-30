@@ -4,6 +4,7 @@ import {
     Route,
     Link
   } from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top'
 import TopNav from '../Components/TopNav';
 import Footer from '../Components/Footer';
 import Page from '../Components/Page';
@@ -53,9 +54,12 @@ const pageRoutes = pages.map((curItem, i) => {
   />
 });
 
+
 // console.log('makeItems: ', makeItems)
 const Routes = (props) => (
-    <Router>
+    <Router >
+
+      <ScrollToTop>
         <div>
           <TopNav items={items} makeItems={makeItems} />
 
@@ -74,7 +78,8 @@ const Routes = (props) => (
         <Footer />
         </div>
         
-      </Router>
+      </ScrollToTop>
+    </Router>
   );
 
 
