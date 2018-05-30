@@ -29,18 +29,18 @@ let items = <ul className="navbar-nav topNavRight mr-auto">
 
 class TopNav extends Component {
 
-  getMakeItems = (items) =>{
+  getMakeItems = (items) => {
     let makeChildren = items.map( (curItem , i) => {
       return (
-        <Link key={i} className='menu' to={curItem.path}> {curItem.name}</Link>
+        <Link key={i+curItem.name} className='menu' to={curItem.path}> {curItem.name}</Link>
       )
     })
     return (
-      <div class="menu nav-item dropdown">
-        <a class="menu nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div className="menu nav-item dropdown">
+        <a className="menu nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Make
         </a>
-        <div class="menu dropdown-menu topMenu" aria-labelledby="navbarDropdownMenuLink">
+        <div className="menu dropdown-menu topMenu" aria-labelledby="navbarDropdownMenuLink">
           {makeChildren}
         </div>
       </div>
@@ -63,8 +63,8 @@ class TopNav extends Component {
         <div className="collapse  navbar-collapse" id="navbarResponsive">
         {this.getMakeItems(this.props.makeItems)}
         {/* take in Link items from router */}
-          { this.props.items ? this.props.items.map(i=>{
-            return <div className='nav-link'>{i}</div>}) :
+          { this.props.items ? this.props.items.map( (curr, i) => {
+            return <div key={i} className='nav-link'>{curr}</div>}) :
             items }
         {/* {this.props.makeItems ? this.props.makeItems.map(i=>i): ''} */}
         </div>

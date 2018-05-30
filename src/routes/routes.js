@@ -4,23 +4,16 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-import TopNav from './Components/TopNav.js';
-import Footer from './Components/Footer.js';
-import Page from './Components/Page.js';
-import App from './App';
+import TopNav from '../Components/TopNav';
+import Footer from '../Components/Footer';
+import Page from '../Components/Page';
+import App from '../App';
+import {withPageData} from '../context/page-context';
 
 
-// let pageList = [];
-// let dataURL = `https://www.hackrva.org/blog/wp-json/wp/v2/pages/`;
-//     fetch(dataURL)
-//       .then(res => res.json())
-//       .then(res => {
-//         pageList = res
-//       })
+const PageWithData = withPageData(Page);
 
-// list of pages - includes pageid, name and path to route the page
-// console.log(pageList)
-
+//manually mapping the pages with names
 const pages = [
     {pageId:17, name:'Home', path:'/'},
     {pageId:17, name: 'About', path:'/about'},
@@ -39,9 +32,9 @@ const pages = [
 
 // Link components in array to pass to TopNav
 const items = pages.map((curItem, i) => {
-    console.log(curItem.parent)
+    //console.log(curItem.parent)
     if(curItem.parent === 'Make'){
-      return 
+      
     }
     else{
       return <Link key={i} className='menu' to={curItem.path}> {curItem.name}</Link>
@@ -55,7 +48,7 @@ const makeItems = pages.filter(curItem => {
 // dynamically configure routes based on the pages array
 const pageRoutes = pages.map((curItem, i) => {
   return  <Route key={i} exact path={curItem.path} render={ (props) => (
-    <Page pageId = {curItem.pageId} />
+    <PageWithData key={curItem.pageId} pageId = {curItem.pageId} />
   )}
   />
 });
