@@ -36,13 +36,16 @@ class Blog extends Component {
 
         <style jsx>{`
               .blog-container{
-                background: darkgrey;
+                // background: grey;
                 color:white;
                 top:5em;
                 margin-bottom: 5em;
               }
               .blog-post-card{
+                background:grey;
                 padding:2em;
+                margin: 5em;
+                border:solid lightgrey 4px;
               }
               `
         }

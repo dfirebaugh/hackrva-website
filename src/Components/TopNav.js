@@ -73,7 +73,7 @@ class TopNav extends Component {
             return <div key={i} className='nav-link'>{curr}</div>}) :
             items }
             <div className='nav-link'>
-              <Link className='menu col-md-2 make-menu-items' to='./blog'> Blog</Link>
+              <Link className='menu col-md-2 make-menu-items' to='/blog'> Blog</Link>
             </div>
         {/* {this.props.makeItems ? this.props.makeItems.map(i=>i): ''} */}
         </div>
