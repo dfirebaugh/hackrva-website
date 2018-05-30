@@ -9,14 +9,18 @@ import TopNav from '../Components/TopNav';
 import Footer from '../Components/Footer';
 import Page from '../Components/Page';
 import App from '../App';
+import Blog from '../Components/Blog';
 import {withPageData} from '../context/page-context';
+import {withPostData} from '../context/post-context';
 
 
 const PageWithData = withPageData(Page);
+const BlogWithData = withPostData(Blog)
+
 
 //manually mapping the pages with names
 const pages = [
-    {pageId:17, name:'Home', path:'/'},
+    // {pageId:17, name:'Home', path:'/'},
     {pageId:17, name: 'About', path:'/about'},
     {pageId:13, name:'Calendar', path:'/calendar'},
     // {pageId:1172, name:'Blog', path:'/blog'},
@@ -27,6 +31,7 @@ const pages = [
     {pageId:1236, name:'Projects', path:'/projects', parent: 'Make'},
     {pageId:1214, name:'Tools', path:'/tools', parent: 'Make'},
     {pageId:939, name:'Electronics', path:'/electronics', parent: 'Make'},
+    // {pageId:0, name: 'Blog', path: '/blog'}
   ];
 
 
@@ -69,6 +74,8 @@ const Routes = (props) => (
 
           {/* all other pages */}
           {pageRoutes}
+          <Route exact path="/blog" render={(props) => <BlogWithData />}
+          />
         <Footer />
         </div>
         

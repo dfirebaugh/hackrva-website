@@ -6,6 +6,22 @@ body{
   background-color: #222;
   text-align: center;
 }
+a {
+  color: white;
+  font-weight:bold;
+}
+
+a:hover{
+  color: green;
+}
+
+a:active{
+  color: green;
+}
+
+a:visited{
+  color: white;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
