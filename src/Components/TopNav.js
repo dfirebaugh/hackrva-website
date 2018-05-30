@@ -32,12 +32,18 @@ class TopNav extends Component {
   getMakeItems = (items) => {
     let makeChildren = items.map( (curItem , i) => {
       return (
-        <Link key={i+curItem.name} className='menu' to={curItem.path}> {curItem.name}</Link>
+        <Link key={i+curItem.name} className='menu col-md-2 make-menu-items' to={curItem.path}> {curItem.name}</Link>
       )
     })
     return (
-      <div className="menu nav-item dropdown">
-        <a className="menu nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div className="menu nav-item make-menu dropdown">
+        <a 
+          className="menu nav-link  dropdown-toggle" 
+          href="" id="navbarDropdownMenuLink" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false"
+          >
           Make
         </a>
         <div className="menu dropdown-menu topMenu" aria-labelledby="navbarDropdownMenuLink">
@@ -57,10 +63,10 @@ class TopNav extends Component {
 
         {/* <a className="navbar-brand float-left" href="#Hack.RVA">Hack.RVA</a> */}
         <Link className='menu' to='/'>Hack.RVA</Link>
-        <button className="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse  navbar-collapse" id="navbarResponsive">
+        <div className="collapse navbar-collapse" id="navbarResponsive">
         {this.getMakeItems(this.props.makeItems)}
         {/* take in Link items from router */}
           { this.props.items ? this.props.items.map( (curr, i) => {
@@ -70,6 +76,35 @@ class TopNav extends Component {
         </div>
 
         </nav>
+
+        <style jsx>{`
+              .make-menu{
+              //  color:red;
+              // display:flex;
+              padding-top:0;
+              }
+              .make-menu *{
+                // color:blue;
+              }
+              .make-menu-items{
+                // color:green;
+                flex-wrap:wrap;
+
+              }
+              .topMenu{
+                // display:flex;
+              }
+              .navbar{
+                flex-wrap:nowr
+              }
+              .navbar-toggler {
+                position:absolute;
+                right: 15px;
+              }
+              `
+        }
+        </style>
+
       </div>
     );
   }
