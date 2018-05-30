@@ -73,8 +73,12 @@ class TopNav extends Component {
             return <div key={i} className='nav-link'>{curr}</div>}) :
             items }
             <div className='nav-link'>
-              <Link className='menu col-md-2 make-menu-items' to='/blog'> Blog</Link>
+              <a className='menu col-md-2' href="https://wiki.hackrva.org"> Wiki </a>
             </div>
+            <div className='nav-link'>
+              <Link className='menu col-md-2' to='/blog'> Blog</Link>
+            </div>
+
         {/* {this.props.makeItems ? this.props.makeItems.map(i=>i): ''} */}
         </div>
 
@@ -98,11 +102,13 @@ class TopNav extends Component {
                 // display:flex;
               }
               .navbar{
-                flex-wrap:nowr
+                padding-top:2em;
+                // padding-bottom:1sem;
               }
               .navbar-toggler {
                 position:absolute;
                 right: 15px;
+                top:15px;
               }
               `
         }

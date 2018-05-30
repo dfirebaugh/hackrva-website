@@ -38,7 +38,7 @@ const pages = [
 
 // Link components in array to pass to TopNav
 const items = pages.filter( x => x.parent !== 'Make').map( (x,i) => 
-  <Link key={i} className='menu' to={x.path}> {x.name}</Link>
+  <Link key={i} className='menu col-md-2' to={x.path}> {x.name}</Link>
 )
 
 const makeItems = pages.filter(curItem => {
