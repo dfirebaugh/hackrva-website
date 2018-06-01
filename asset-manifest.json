@@ -1,11 +1,12 @@
 {
-  "main.css": "static/css/main.4c71ad7a.css",
-  "main.css.map": "static/css/main.4c71ad7a.css.map",
-  "main.js": "static/js/main.84f03347.js",
-  "main.js.map": "static/js/main.84f03347.js.map",
-  "static/media/IMG_20170401_153700.jpg": "static/media/IMG_20170401_153700.0bfa77a8.jpg",
-  "static/media/IMG_20170506_182745.jpg": "static/media/IMG_20170506_182745.82c349ba.jpg",
-  "static/media/IMG_20170826_202858.jpg": "static/media/IMG_20170826_202858.56ace357.jpg",
-  "static/media/IMG_4214.JPG": "static/media/IMG_4214.63ab8210.JPG",
-  "static/media/IMG_7702.JPG": "static/media/IMG_7702.b87d27cf.JPG"
+  "main.css": "static/css/main.a72113ca.css",
+  "main.css.map": "static/css/main.a72113ca.css.map",
+  "main.js": "static/js/main.9ff9d8ea.js",
+  "main.js.map": "static/js/main.9ff9d8ea.js.map",
+  "static\\media\\HackathonOct2016.mp4": "static/media/HackathonOct2016.7e90af70.mp4",
+  "static\\media\\IMG_20170401_153700.jpg": "static/media/IMG_20170401_153700.0bfa77a8.jpg",
+  "static\\media\\IMG_20170506_182745.jpg": "static/media/IMG_20170506_182745.82c349ba.jpg",
+  "static\\media\\IMG_20170826_202858.jpg": "static/media/IMG_20170826_202858.56ace357.jpg",
+  "static\\media\\IMG_4214.JPG": "static/media/IMG_4214.63ab8210.JPG",
+  "static\\media\\IMG_7702.JPG": "static/media/IMG_7702.b87d27cf.JPG"
 }
