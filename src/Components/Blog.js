@@ -31,10 +31,10 @@ class Blog extends Component {
           blogPosts: res,
           curPage: this.state.curPage + pageNum
         })
-        .catch(() => {
-          console.log("error")
-        })
-})
+      })
+      .catch(() => {
+        console.log("error")
+      })
 
   }
   render(){
@@ -75,6 +75,11 @@ class Blog extends Component {
 
 
         <style jsx>{`
+                .blog-post-card * {
+                  max-width:100%;
+                  height:auto;
+                  width: auto;
+                }
               .blog-container{
                 // background: grey;
                 color:white;
@@ -87,6 +92,11 @@ class Blog extends Component {
                 margin: 5em;
                 border:solid lightgrey 4px;
               }
+              .blog-post-card p{
+                max-width:100%;
+                height:auto;
+                width:auto;
+              }
               .btn-container{
                 display:flex;
               }
@@ -95,11 +105,8 @@ class Blog extends Component {
                 background:black;
                 padding:15px;
               }
-              img {
-                max-width:100%;
-                height:auto;
-                width: auto;
-              }
+              
+              
               `
         }
         </style>

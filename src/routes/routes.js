@@ -64,11 +64,15 @@ const Routes = (props) => (
 
           {/* home page */}
           <Route exact path="/" render={(props) => (
-              <App showSlider={true} />
+              <App showSlider={false} >
+                <PageWithData pageId = {17} />
+              </App>
             )}
           />
           <Route exact path="/hackrva-website" render={(props) => (
-              <App showSlider={true} />
+              <App showSlider={false} >
+                <PageWithData pageId = {17} />
+              </App>
             )}
           />
 

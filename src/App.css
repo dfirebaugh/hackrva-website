@@ -55,7 +55,7 @@ a:visited{
 
 .page-container{
   width: 66vw;
-  margin-top: 12vh;
+  margin-top: 15vh;
   background-color:rgb(95, 95, 95);
   color:rgb(212, 212, 212);
 }
@@ -64,6 +64,11 @@ a:visited{
   margin-left:auto;
   margin-right:auto;
   display:block;
+}
+iframe {
+  max-width:100%;
+  /* height:auto; */
+  /* width: auto; */
 }
 
 .navBarBlack{
@@ -174,12 +179,12 @@ a:visited{
 
 .joinBtn button{
   z-index:20;
-  /*margin-top:460px;*/
-  /*margin-left:5em;*/
-  /* background-color:transparent; */
+  /* margin-top:460px; */
+  /* margin-left:5em; */
+  background-color:transparent;
   background-color: slategrey;
   width: 19em;
-  height: 4em;
+  height: auto;
 }
 
 .joinBtn button h2{
@@ -213,46 +218,25 @@ a:visited{
   margin-left: 20%;*/
   list-style: none;
 }
-@media screen and (min-width: 150px) {
-    /*.sliderOverlay{
-      margin-left: 25%;
-    }*/
-}
-@media screen and (min-width: 500px) {
-    /*.sliderOverlay{
-      margin-left: 30%;
-    }*/
-}
 
+/* 
 
 @media screen and (min-width: 990px) {
     .topNavRight{
       margin-left:55%;
     }
-    /*.sliderOverlay{
-      margin-left: 24.5%;
-    }*/
 }
 @media screen and (min-width: 1200px) {
     .topNavRight{
       margin-left:67%;
     }
-    /*.joinBtn{
-      margin-left:3.5em;
-    }*/
-    /*.sliderOverlay{
-      margin-left: 22%;
-    }*/
 }
 
 @media screen and (min-width: 1600px) {
     .topNavRight{
       margin-left:72%;
     }
-    /*.joinBtn{
-      margin-left:5em;
-    }*/
-}
+} */
 
 /* @mixin center-children {
   display: flex;
