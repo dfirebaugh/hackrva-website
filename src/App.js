@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MainSlider from './Components/MainSlider.js';
 import {Link} from 'react-router-dom';
 import hackathon from './assets/HackathonOct2016.mp4';
@@ -6,10 +6,8 @@ import VideoCover from 'react-video-cover';
 import './App.css';
 //home page -- mainly just loads the MainSlider component
 
-class App extends Component {
-  render() {
-    console.log(this.props)
-    const video = <VideoCover  
+const App = (props) =>  {
+  const video = <VideoCover  
                     style={{
                       objectFit: 'cover',
                       width: 'auto',
@@ -43,7 +41,7 @@ class App extends Component {
                   </div>
 
                 </ol>
-        {this.props.showSlider === true ? <MainSlider /> : video }
+        {props.showSlider === true ? <MainSlider /> : video }
 
 
         <div className="separator"> 
@@ -51,7 +49,7 @@ class App extends Component {
         </div> 
 
 
-          {this.props.children}
+          {props.children}
 
 
           <style jsx>{`
@@ -65,7 +63,6 @@ class App extends Component {
         </style>
       </div>
     );
-  }
 }
 
 export default App;

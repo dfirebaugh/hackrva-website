@@ -110,6 +110,11 @@ iframe {
   padding:15px;
 }
 
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .no-padding{
   padding-left:0;
   padding-right:0;
@@ -189,6 +194,7 @@ iframe {
 
 .joinBtn button h2{
   padding-top: 5%;
+  padding-bottom:2%;
     color: white;
     font-weight: bold;
     font-size: 25px;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import img1 from '../assets/IMG_4214.JPG';
 import img2 from '../assets/IMG_7702.JPG';
@@ -6,8 +6,7 @@ import img3 from '../assets/IMG_20170401_153700.jpg';
 import img4 from '../assets/IMG_20170506_182745.jpg';
 import img5 from '../assets/IMG_20170826_202858.jpg';
 
-class MainSlider extends Component {
-  render(){
+const MainSlider = () => {
     return (
 
       <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -66,8 +65,7 @@ class MainSlider extends Component {
 
 
     );
-  }
 }
-
+    
 
 export default MainSlider;

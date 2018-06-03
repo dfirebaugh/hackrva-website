@@ -67,8 +67,8 @@ class Blog extends Component {
 
 
         <div className='container btn-container'> 
-          <button className="col-md-6" onClick={() => this.handleOlderClick()}> older </button> 
           <button className="col-md-6" onClick={() => this.handleNewerClick()}> newer </button> 
+          <button className="col-md-6" onClick={() => this.handleOlderClick()}> older </button> 
         </div>
 
 

@@ -1,7 +1,6 @@
-import React, { Component } from 'react';;
+import React from 'react';;
 
-class Footer extends Component {
-  render(){
+const Footer = () => {
     return (
         <footer className="py-5 app-footer bg-dark">
           <div className="container">
@@ -9,7 +8,6 @@ class Footer extends Component {
           </div>
         </footer>
     );
-  }
 }
 
 
